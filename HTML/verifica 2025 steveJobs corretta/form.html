@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div align="center">
+        <h2>COMPILA IL FORM</h2>
+        <form action="./haiperso.html">
+            <input type="text" name="nome" id="nome" placeholder="NOME" required><br>
+            <input type="text" name="cognome" id="cognome" placeholder="COGNOME" required>
+            <br><br>
+            <label for="eta">Età (min 16)</label><br>
+            <input type="number" min="16" value="16" name="eta" id="eta" placeholder="ETA">
+            <br><br>
+            <select name="occupazione" id="occupazione">
+                <option value="studente">Studente</option>
+                <option value="lavoratore">Lavoratore</option>
+                <option value="pensionato">Pensionato</option>
+            </select>
+            <br><br>
+            <label for="genere">Genere:</label><br>
+            <input type="radio" name="genere" id="generemale" value="M">M
+            <input type="radio" name="genere" id="generefemale" value="F">F
+            <br><br>
+            <label for="schermo">Schermi Preferiti:</label><br>
+            <input type="checkbox" name="schermo" id="schermo21" value="21">21
+            <input type="checkbox" name="schermo" id="schermo22" value="22">22
+            <input type="checkbox" name="schermo" id="schermo27" value="27">27
+            <br><br>
+            <label for="condizioni">Ho letto e accetto le condizioni</label>
+            <input type="checkbox" name="condizioni" id="condizioni" value="SI" required>
+            <br><br>
+            <input type="submit" value="TENTA LA FORTUNA">
+        </form>
+    </div>
+</body>
+</html>

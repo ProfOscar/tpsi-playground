@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ese12</title>
+</head>
+
+<body>
+    <h1>Pagina di registrazione a vallauri.edu</h1>
+    <form action="./pagina2.html">
+        <label for="txtNome">Nome:</label>
+        <input type="text" name="txtNome" id="txtNome" placeholder="Inserisci il tuo nome" required maxlength="20"
+            title="inserisci il tuo nome di battesimo" />
+        <br /><br />
+
+        <label for="txtCognome">Cognome:</label>
+        <input type="text" name="txtCognome" id="txtCognome" placeholder="Inserisci il tuo cognome" required
+            maxlength="20" title="inserisci il tuo cognome" />
+        <br /><br />
+
+        <label for="txtPassword">Scegli una password</label>
+        <input type="password" name="txtPassword" id="txtPassword" placeholder="Scegli una pass tra 8 e 20 chr"
+            minlength="8" maxlength="20" required>
+        <br><br />
+
+        <label for="txtEta">Età</label>
+        <input type="number" name="txtEta" id="txtEta" min="18" max="70" value="20" required>
+        <br /><br />
+
+        <label for="txtImmagine">Scegli una immagine di profilo</label>
+        <!-- input type="file" NON riconosce il placeholder -->
+        <input type="file" name="txtImmagine" id="txtImmagine" required>
+
+        <p>
+            <span>Hobbies:</span>
+            <br>
+            <input type="checkbox" name="chkHobbies" id="chkSport" value="sport">
+            <label for="chkSport">Sport</label>
+            <br>
+            <input type="checkbox" name="chkHobbies" id="chkMusica" value="musica">
+            <label for="chkMusica">Musica</label>
+            <br>
+            <input type="checkbox" name="chkHobbies" id="chkInformatica" value="Informatica">
+            <label for="chkInformatica">Informatica</label>
+        </p>
+
+        <fieldset>
+            <legend>Settore di studio</legend>
+            <input type="radio" name="optSettore" id="optInformatica" value="informatica">
+            <label for="optInformatica">Informatica</label>
+            <br>
+            <input type="radio" name="optSettore" id="optMeccanica" value="meccanica">
+            <label for="optMeccanica">Meccanica</label>
+            <br>
+            <input type="radio" name="optSettore" id="optElettrotecnica" value="elettrotecnica">
+            <label for="optElettrotecnica">Elettrotecnica</label>
+        </fieldset>
+        <br>
+        <label for="txtCommenti">Commenti:</label>
+        <textarea name="txtCommenti" id="txtCommenti" rows="5" cols="30"
+            placeholder="Inserisci eventuali commenti"></textarea>
+        <br>
+
+        <br>
+        <label for="lstProvincia">Provincia di residenza:</label>
+        <select name="lstProvincia" id="lstProvincia">
+            <option>Cuneo</option>
+            <option value="TO">Torino</option>
+            <option value="AT">Asti</option>
+            <option value="AL">Alessandria</option>
+            <option value="NO">Novara</option>
+        </select>
+        <br>
+
+        <br>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+
+    </form>
+
+
+
+
+</body>
+
+</html>
